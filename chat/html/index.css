@@ -110,6 +110,10 @@ input:focus {
   animation-name: slideInLeft;
   animation-duration: 1s;
   animation-iteration-count: 1;
+    flex-flow: row;
+  flex-wrap: wrap;
+    word-break: break-word;
+
 }
 
 .multiline {
