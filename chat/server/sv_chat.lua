@@ -44,14 +44,6 @@ AddEventHandler('__cfx_internal:commandFallback', function(command)
     CancelEvent()
 end)
 
--- player join messages
-AddEventHandler('chat:init', function()
-    --TriggerClientEvent('chatMessage', -1, '', { 255, 255, 255 }, '^2* ' .. GetPlayerName(source) .. ' joined Oxious RP!.')
-end)
-
-AddEventHandler('playerDropped', function(reason)
-    --TriggerClientEvent('chatMessage', -1, '', { 255, 255, 255 }, '^2* ' .. GetPlayerName(source) ..' left Oxious RP (' .. reason .. ')')
-end)
 
 -- command suggestions for clients
 local function refreshCommands(player)
